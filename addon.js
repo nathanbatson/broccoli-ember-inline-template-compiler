@@ -7,7 +7,7 @@ var compiler;
 module.exports = {
     name: 'broccoli-ember-inline-template-compiler',
     init: function() {
-        compiler = require(path.join(this.project.root, './bower_components/ember/ember-template-compiler.js'));
+        compiler = require(path.join(this.project.root, './node_modules/ember-source/dist/ember-template-compiler.js'));
     },
     _setupPreprocessorRegistry: function(type, registry) {
         registry.add('js', {
